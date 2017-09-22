@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './User.css'
 
 class User extends Component{
 	constructor(props){
@@ -61,14 +61,14 @@ class User extends Component{
 							)
 						}
 					)
-				:'Followers'
+				:'Haz click en el nombre para mostrar seguidores'
 		);
 	}
 
 	render(){
 		return(
 			<div className="user">
-				<h1 className="head" onClick={()=>{this.getFollowers(this.props.username)}}>{this.renderUsername()}</h1>
+				<h3 className="head" onClick={()=>{this.getFollowers(this.props.username)}}>{this.renderUsername()}</h3>
 				<div className="followers">{this.renderFollowers()}</div>
 			</div>
 		);

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Search.css'
 
 class Search extends Component{
 	constructor(props){
@@ -15,7 +16,8 @@ class Search extends Component{
 	render(){
 		return(
 			<div className="searchbox">
-				<input type="search" onKeyDown={this.getFollowers}/>
+				<h1>Buscar Login de Github</h1>
+				<input className="box" type="search" onKeyDown={this.getFollowers}/>
 			</div>
 		)
 	}
